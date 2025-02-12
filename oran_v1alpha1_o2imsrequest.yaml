@@ -1,0 +1,12 @@
+apiVersion: oran.o2imsop/v1alpha1
+kind: O2imsRequest
+metadata:
+  labels:
+    app.kubernetes.io/name: o2ims-test-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: o2imsrequest-sample
+spec:
+  domain: 172.16.1.1
+  port: 9000
+  path: /o2ims-infrastructureInventory/v1/deploymentManagers
+  
